@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>CodeAcademy</title>
+</head>
+
+<body>
+    <!--navbar-ul-->
+    <header class="header">
+        <nav class="nav">
+            <a class="logo"><strong>Code</strong>Academy</a>
+            <ul class="list">
+                <li class="list__item"><a class="link" href="#">About Us</a></li>
+                <li class="list__item"><a class="link" href="#">Courses</a></li>
+            </ul>
+            <div class="btn">
+                <button onclick="login()" class="login">Login</button>
+                <button onclick="signUp()" class="singUp">Start Learning</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="intro">
+            <h1>Launch Your Tech Career</h1>
+            <p>Get the skills you need to land a high-paying job in tech</p>
+            <div class="butoane">
+                <button href="#" onclick="verificare()" class="btn-verify">View Courses</button>
+                <button href="#" class="btn-info">How it works</button>
+            </div>
+            <div class="info">
+                <p><strong>500+</strong> Graduates</p>
+                <p><strong>80%</strong> Job Rate</p>
+                <p><strong>6 months</strong> Average</p>
+            </div>
+        </div>
+
+        <div class="courses">
+            <h3>Our Courses</h3>
+            <div class="course">
+                <div class="python-course container">
+                    <img src="imagini-svg/python.svg" class="img">
+                    <h4 class="h4">Python Development</h4>
+                    <p>Learn to code in Python</p>
+                    <div class="block-jos">
+                        <p><strong>6 Months</strong> Beginner</p>
+                    </div>
+                </div>
+
+                <div class="fullstack-course container">
+                    <img src="imagini-svg/fullstack.svg" class="img">
+                    <h4 class="h4">Fullstack Development</h4>
+                    <p>Front-end and back-end skills</p>
+                    <div class="block-jos">
+                        <p><strong>7 Months</strong> Intermediate</p>
+                    </div>
+                </div>
+
+                <div class="ds-course container">
+                    <img src="imagini-svg/data.svg" class="img">
+                    <h4 class="h4">Data Science</h4>
+                    <p>Master Data Science</p>
+                    <div class="block-jos">
+                        <p><strong>6 Months</strong> Advanced</p>
+                    </div>
+                </div>
+
+                <div class="ai-course container">
+                    <img src="imagini-svg/ai.svg" class="img">
+                    <h4 class="h4">AI / Machine Learning</h4>
+                    <p>Build AI solutions</p>
+                    <div class="block-jos">
+                        <p><strong>8 Months</strong> Advanced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="information">
+            <h3>Why to choose CodeAcademy</h3>
+            <div class="jos">
+                <div class="job container">
+                    <img src="imagini2-svg/job.svg" class="img">
+                    <h4>Job Placement Assistance</h4>
+                    <p>Support to get hired fast</p>
+                </div>
+
+                <div class="expert container">
+                    <img src="imagini2-svg/expert.svg" class="img">
+                    <h4>Expert instructors</h4>
+                    <p>Learn from industry pros</p>
+                </div>
+
+                <div class="hands container">
+                    <img src="imagini2-svg/hands.svg">
+                    <h4>Hans-on Project</h4>
+                    <p>Practical, real world tasks</p>
+                </div>
+
+                <div class="career container">
+                    <img src="imagini2-svg/idea.svg">
+                    <h4>Career Mentorship</h4>
+                    <p>Guidance fro your succes</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="descriere">
+            <div class="review">
+                <p>
+                    The bootcamp really works! CodeAcademy helped me master Python
+                    and get hired faster than I thought possible.
+                </p>
+                <p>- David M. Developer</p>
+            </div>
+
+            <div class="mail">
+                <fieldset class="fieldset">
+                    <legend>Registration</legend>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
+                </fieldset>
+
+                <button onclick="registerMe()" class="button">
+                    Start your tech career
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; All rights reserved 2026</p>
+    </footer>
+</body>
+
+</html>

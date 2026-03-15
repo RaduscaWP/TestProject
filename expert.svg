@@ -1,0 +1,69 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradHead" x1="50" y1="28" x2="111" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1188FF"/>
+      <stop offset="55%" stop-color="#4C6CFF"/>
+      <stop offset="100%" stop-color="#C26DFF"/>
+    </linearGradient>
+
+    <linearGradient id="gradBody" x1="34" y1="88" x2="124" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E7BFF"/>
+      <stop offset="52%" stop-color="#3E63FF"/>
+      <stop offset="100%" stop-color="#B76BFF"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feColorMatrix
+        in="blur"
+        type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.38 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <!-- Head -->
+    <circle cx="80" cy="54" r="27" fill="url(#gradHead)"/>
+
+    <!-- Mustache / glasses-like curve -->
+    <path
+      d="M58 50
+         C58 56, 62 60, 68 60
+         C73 60, 76 56, 76 52
+         C76 56, 79 60, 84 60
+         C90 60, 94 56, 94 50"
+      stroke="#07111F"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Neck / collar -->
+    <path
+      d="M72 83H88L84 92L80 103L76 92L72 83Z"
+      fill="#07111F"
+    />
+
+    <!-- Body -->
+    <path
+      d="M42 114
+         C42 95, 55 87, 69 87
+         H91
+         C105 87, 118 95, 118 114
+         V118
+         H42
+         V114Z"
+      fill="url(#gradBody)"
+    />
+
+    <!-- Shirt opening -->
+    <path
+      d="M69 87L80 103L91 87"
+      fill="#07111F"
+    />
+  </g>
+</svg>

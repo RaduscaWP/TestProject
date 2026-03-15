@@ -1,0 +1,65 @@
+<svg width="512" height="384" viewBox="0 0 512 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradStroke" x1="40" y1="100" x2="430" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14B8FF"/>
+      <stop offset="50%" stop-color="#3E62FF"/>
+      <stop offset="100%" stop-color="#D874FF"/>
+    </linearGradient>
+
+    <linearGradient id="gradBase" x1="30" y1="270" x2="450" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2647FF"/>
+      <stop offset="55%" stop-color="#4E5FFF"/>
+      <stop offset="100%" stop-color="#C97EFF"/>
+    </linearGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.9 0" result="glowColor"/>
+      <feMerge>
+        <feMergeNode in="glowColor"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Screen frame -->
+  <g filter="url(#glow)" stroke="url(#gradStroke)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 252V74c0-11 9-20 20-20h309c11 0 20 9 20 20v178"/>
+  </g>
+
+  <!-- Top inner line -->
+  <path d="M110 92H308" stroke="url(#gradStroke)" stroke-width="10" stroke-linecap="round" filter="url(#softGlow)"/>
+
+  <!-- Base -->
+  <g filter="url(#glow)">
+    <path d="M15 253H433c10 0 18 8 18 18v20c0 11-9 20-20 20H37c-12 0-22-10-22-22v-18c0-10 8-18 18-18Z"
+          fill="url(#gradBase)"/>
+    <rect x="18" y="264" width="396" height="10" rx="5" fill="#04050D"/>
+    <path d="M185 274H267V295c0 4-3 7-7 7h-68c-4 0-7-3-7-7v-21Z" fill="#05060F"/>
+  </g>
+
+  <!-- Code symbols -->
+  <g filter="url(#softGlow)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M110 166L88 186L110 206" stroke="#17B7FF" stroke-width="13"/>
+    <path d="M174 145L146 230" stroke="#2993FF" stroke-width="13"/>
+    <path d="M231 158
+             C219 158 217 170 226 175
+             L244 186
+             C255 193 250 209 236 209
+             H213"
+          stroke="#5E82FF" stroke-width="13"/>
+    <path d="M308 166L330 186L308 206" stroke="#CC53FF" stroke-width="13"/>
+  </g>
+</svg>

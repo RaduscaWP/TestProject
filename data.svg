@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 120" width="220" height="120">
+  <defs>
+    <linearGradient id="gMain" x1="0" y1="0" x2="220" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6EC3FF"/>
+      <stop offset="0.42" stop-color="#2D56FF"/>
+      <stop offset="1" stop-color="#B14CFF"/>
+    </linearGradient>
+    <linearGradient id="gSoft" x1="20" y1="20" x2="170" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FD5FF"/>
+      <stop offset="0.45" stop-color="#6A91FF"/>
+      <stop offset="1" stop-color="#E1B9FF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+    </filter>
+  </defs>
+
+  <g opacity="0.65" filter="url(#glow)">
+    <path d="M18 95V38M18 95H176" fill="none" stroke="url(#gMain)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 27H66L62 56C61 61 56 64 50 64H39C33 64 28 61 27 56L23 27Z" fill="url(#gSoft)"/>
+    <rect x="31" y="62" width="27" height="32" fill="url(#gMain)"/>
+    <rect x="61" y="45" width="29" height="49" fill="url(#gSoft)"/>
+    <rect x="94" y="62" width="28" height="32" fill="url(#gMain)"/>
+    <path d="M125 94V27L143 10L161 27V94Z" fill="url(#gMain)"/>
+    <rect x="167" y="24" width="30" height="70" fill="url(#gMain)"/>
+    <path d="M25 74C38 67 52 71 60 78C67 53 78 43 87 47C92 49 96 56 101 60C112 55 119 46 124 38L124 94H25Z" fill="url(#gSoft)"/>
+    <path d="M26 74C40 68 51 72 60 78C68 54 79 43 87 48C92 51 96 58 102 61C112 55 120 45 125 37" fill="none" stroke="#050A1E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="88" cy="46" r="13" fill="#E4C1FF"/>
+    <rect x="143.5" y="22" width="11" height="72" rx="5.5" fill="#050A1E"/>
+    <path d="M168 43l9 9 19-18" fill="none" stroke="#C365FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M185 59h30v42h-12V80l-13 13-9-9 13-13h-9z" fill="#8B48FF"/>
+  </g>
+
+  <g>
+    <path d="M18 95V38M18 95H176" fill="none" stroke="url(#gMain)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 27H66L62 56C61 61 56 64 50 64H39C33 64 28 61 27 56L23 27Z" fill="url(#gSoft)"/>
+    <rect x="31" y="62" width="27" height="32" fill="url(#gMain)"/>
+    <rect x="61" y="45" width="29" height="49" fill="url(#gSoft)"/>
+    <rect x="94" y="62" width="28" height="32" fill="url(#gMain)"/>
+    <path d="M125 94V27L143 10L161 27V94Z" fill="url(#gMain)"/>
+    <rect x="167" y="24" width="30" height="70" fill="url(#gMain)"/>
+    <path d="M25 74C38 67 52 71 60 78C67 53 78 43 87 47C92 49 96 56 101 60C112 55 119 46 124 38L124 94H25Z" fill="url(#gSoft)"/>
+    <path d="M26 74C40 68 51 72 60 78C68 54 79 43 87 48C92 51 96 58 102 61C112 55 120 45 125 37" fill="none" stroke="#050A1E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="88" cy="46" r="12.5" fill="#E4C1FF"/>
+    <rect x="143.5" y="22" width="11" height="72" rx="5.5" fill="#050A1E"/>
+    <path d="M168 43l9 9 19-18" fill="none" stroke="#C365FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M185 59h30v42h-12V80l-13 13-9-9 13-13h-9z" fill="#8B48FF"/>
+    <circle cx="201" cy="101" r="2.5" fill="#2E63FF" opacity="0.8"/>
+  </g>
+</svg>
