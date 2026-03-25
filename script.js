@@ -488,21 +488,15 @@ function makeOrder() {
 }
 
 function clearData() {
-    client = {
-        nume: '',
-        prenume: '',
-        telefon: ''
-    }
+    client.nume = ''
+    client.prenume = ''
+    client.telefon = ''
 
-    produs = {
-        nume: '',
-        cantitate: ''
-    }
+    produs.nume = ''
+    produs.cantitate = ''
 
-    livrare = {
-        adresa: '',
-        data: ''
-    }
+    livrare.adresa = ''
+    livrare.data = ''
 
     editId = -1
     updateShowBtn()
@@ -640,3 +634,26 @@ function showLista() {
 
 updateShowBtn()
 showPage('client')
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        client,
+        produs,
+        livrare,
+        getEditId: () => editId,
+        setEditId: (id) => { editId = id },
+        okClient,
+        okProdus,
+        okLivrare,
+        setState,
+        makeOrder,
+        clearData,
+        updateShowBtn,
+        showPage,
+        showClient,
+        showProdus,
+        showLivrare,
+        showComanda,
+        showLista
+    }
+}
